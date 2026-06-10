@@ -6,6 +6,8 @@ authors = ["raziel <tvindzon@gmail.com>"]
 readme = "README.md"
 packages = [
     { include = "app", from = "src" },
+    { include = "settings", from = "src" },
+    { include = "core", from = "src" },
 ]
 
 [tool.poetry.dependencies]
@@ -30,7 +32,7 @@ line-length = 88
 target-version = "py38"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "B", "C4"]
+select = ["E", "F", "B", "C4"]
 
 [tool.poetry.scripts]
 app = "app.main:run"
