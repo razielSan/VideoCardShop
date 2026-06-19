@@ -22,6 +22,7 @@ def setup_logging() -> None:
     file_handler.setFormatter(formatter)
 
     root_logger = logging.getLogger()
+    root_logger.setLevel(logging.INFO)
 
     if root_logger.handlers:
         root_logger.handlers.clear()

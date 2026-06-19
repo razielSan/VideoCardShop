@@ -12,6 +12,3 @@ repos:
     hooks:
       - id: mypy
         args: [--config-file=mypy.ini]
-        additional_dependencies:
-          - pydantic
-          - pydantic-settings
