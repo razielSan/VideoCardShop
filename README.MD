@@ -53,8 +53,8 @@ VideoCardShop/
 ### 1️⃣ Clone repository
 
 ```bash
-git clone https://github.com/razielSan/KinopoiskSearch.git
-cd KinopoiskSearch
+git clone git@github.com:razielSan/VideoCardShop.git
+cd VideoCardShop
 ```
 
 
@@ -77,23 +77,16 @@ venv\Scripts\activate
 
 ### 3️⃣ Install dependencies
 
+Pip update
+```bash
+python -m pip install --upgrade pip
+```
+
+Install dependencies
 ```bash
 pip install -e .
 ```
 
-### ⚙️ Configuration
-
-Create file:
-
-```bash
-src/app/kinopoisk/backend/.env
-```
-
-Example:
-
-```.env
-API_KEY=YOUR_API_KEY
-```
 
 ### ▶️ Run Application
 
@@ -104,15 +97,6 @@ or
 
 ```bash
 app
-```
-
-
-### 🧪 Testing
-
-Run tests:
-
-```bash
-pytest tests
 ```
 
 ### 🤝 Contributing
