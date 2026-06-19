@@ -1,9 +1,9 @@
 [tool.poetry]
-name = "internetshop"
+name = "VideoCardShop"
 version = "0.1.1"
 description = ""
 authors = ["raziel <tvindzon@gmail.com>"]
-readme = "README.md"
+readme = "README.MD"
 packages = [
     { include = "app", from = "src" },
     { include = "settings", from = "src" },
