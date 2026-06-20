@@ -5,4 +5,4 @@ function getProductsOnPage(products, count, page) {
     return productsOnPage
 }
 
-export { getProductsOnPage }
+export { getProductsOnPage }                                
