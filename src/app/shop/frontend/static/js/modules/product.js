@@ -1,3 +1,5 @@
+import {getProductsOnPage} from "../domain/product.js"
+
 class Product {
   static pagination = document.querySelector(".js-pagination");
   static btnNextPagination = document.querySelector(".pagination-btn-next");
@@ -8,6 +10,7 @@ class Product {
     this.currentPage = 1;
     this.products = products;
     this.container =  document.querySelector(".js-products-list");
+    this.getProductsOnPage = getProductsOnPage
   }
 
   init() {
@@ -62,9 +65,8 @@ class Product {
   renderProducts() {
     this.container.innerHTML = "";
 
-    const firstProductIndex = this.productCount * this.currentPage - this.productCount;
-    const lastProductIndex = firstProductIndex + this.productCount;
-    const productsOnPage = this.products.slice(firstProductIndex, lastProductIndex);
+    const productsOnPage = getProductsOnPage(this.products, this.productCount, this.currentPage)
+
 
     productsOnPage.forEach(({ id, photo, series, prices }) => {
       const liContainerElement = document.createElement("li");

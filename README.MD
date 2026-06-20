@@ -35,6 +35,7 @@
 
 ```text
 VideoCardShop/
+│── .github/
 │── src/
 │   ├── app/                # Application layer
 │   ├── core/               # Shared utilities
@@ -50,7 +51,15 @@ VideoCardShop/
 
 
 ## 🚀 Quick Start
-### 1️⃣ Clone repository
+
+### 1. Install poetry globally on your computer
+
+```bash
+pip install poetry
+```
+
+### 2. Clone repository
+
 
 ```bash
 git clone git@github.com:razielSan/VideoCardShop.git
@@ -58,44 +67,22 @@ cd VideoCardShop
 ```
 
 
-### 2️⃣ Create virtual environment
+### 3. Install dependencies
 
-Linux / macOS
 
 ```python
-python -m venv venv
-source venv/bin/activate
-
+poetry install
 ```
-Windows
-
-```python
-python -m venv venv
-venv\Scripts\activate
-```
-
-
-### 3️⃣ Install dependencies
-
-ip update
-```bash
-python -m pip install --upgrade pip
-```
-
-```bash
-pip install -e .
-```
-
 
 ### ▶️ Run Application
 
 ```bash
-uvicorn app.main:app --reload
+poetry run uvicorn app.main:app --reload
 ```
 or
 
 ```bash
-app
+poetry run app
 ```
 
 ### 🤝 Contributing

@@ -151,5 +151,3 @@ class Cart {
 }
 
 export { Cart }
-
-src\app\shop\frontend\static\js\core\startup.js
